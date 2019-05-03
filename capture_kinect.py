@@ -7,7 +7,7 @@ class CaptureRuntime(object):
     def __init__(self, output):
 
         self._done = False
-        self._kinect = PyKinectRuntime.PyKinectRuntime(PyKinectV2.FrameSourceTypes_Color))
+        self._kinect = PyKinectRuntime.PyKinectRuntime(PyKinectV2.FrameSourceTypes_Color)
         self.cap = cv2.VideoCapture(output)
 
     def run(self):
